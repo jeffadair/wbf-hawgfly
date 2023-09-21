@@ -40,5 +40,5 @@ void loop() {
   }
   FastLED.show();
   std::rotate(led_vec.begin(), led_vec.begin()+led_vec.size()-1, led_vec.end());
-  delay(100);
+  delay(50);
 }
