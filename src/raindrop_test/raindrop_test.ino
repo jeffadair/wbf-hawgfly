@@ -12,14 +12,14 @@ std::vector<CHSV> drip_vec(DRIP_SIZE, CHSV(0, 0, 0));
 void setup() {
   FastLED.addLeds<NEOPIXEL, DATA_PIN_LED_STRIP_1>(leds, NUM_LEDS);
   FastLED.addLeds<NEOPIXEL, DATA_PIN_LED_STRIP_2>(leds, NUM_LEDS);
-  drip_vec[7] = CHSV(0, 0, 15);
-  drip_vec[6] = CHSV(0, 0, 30);
-  drip_vec[5] = CHSV(0, 0, 45);
-  drip_vec[4] = CHSV(0, 0, 50);
-  drip_vec[3] = CHSV(0, 0, 40);
-  drip_vec[2] = CHSV(0, 0, 30);
-  drip_vec[1] = CHSV(0, 0, 20);
-  drip_vec[0] = CHSV(0, 0, 10);
+  drip_vec[7] = CHSV(0, 0, 30);
+  drip_vec[6] = CHSV(0, 0, 60);
+  drip_vec[5] = CHSV(0, 0, 90);
+  drip_vec[4] = CHSV(0, 0, 100);
+  drip_vec[3] = CHSV(0, 0, 80);
+  drip_vec[2] = CHSV(0, 0, 60);
+  drip_vec[1] = CHSV(0, 0, 40);
+  drip_vec[0] = CHSV(0, 0, 20);
 
   auto drip1_iter = led_vec.begin();
   auto drip2_iter = led_vec.begin() + 20;
