@@ -2,7 +2,7 @@
 #include <ArduinoSTL.h>
 #define DATA_PIN_LED_STRIP_1 11
 #define DATA_PIN_LED_STRIP_2 9
-#define NUM_LEDS 60
+#define NUM_LEDS 120
 #define DRIP_SIZE 9
 
 CRGB leds[NUM_LEDS];
@@ -12,6 +12,7 @@ std::vector<CHSV> drip_vec(DRIP_SIZE, CHSV(0, 0, 0));
 void setup() {
   FastLED.addLeds<NEOPIXEL, DATA_PIN_LED_STRIP_1>(leds, NUM_LEDS);
   FastLED.addLeds<NEOPIXEL, DATA_PIN_LED_STRIP_2>(leds, NUM_LEDS);
+
   drip_vec[7] = CHSV(0, 0, 30);
   drip_vec[6] = CHSV(0, 0, 60);
   drip_vec[5] = CHSV(0, 0, 90);
