@@ -1,2 +1,2 @@
-# wbf2023
-Code for the WBF 2023 competition
+# wbf-hawgfly
+Code for the WBF competitions
